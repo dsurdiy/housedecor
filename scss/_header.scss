@@ -1,0 +1,187 @@
+.header {
+    background-color: #a1a483;
+    // .header__container
+    &__container {
+        min-height: 79px;
+        padding: 8px 25px;
+        display: flex;
+        align-items: center;
+        column-gap: 55px;
+        position: relative;
+        @media (max-width: 767.98px) {
+            column-gap: 40px;
+        }
+        @media (max-width: 600px) {
+            justify-content: space-between;
+            column-gap: 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #a1a483;
+            }
+        }
+        @media (max-width: 320px) {
+            min-height: 52px;
+        }
+    }
+    // .header__logo
+    &__logo {
+        position: relative;
+        z-index: 2;
+        flex: 0 0 192px;
+        @media (max-width: 991.98px) {
+            flex: 0 0 150px;
+        }
+        @media (max-width: 600px) {
+            flex: 0 0 156px;
+        }
+        @media (max-width: 320px) {
+            flex: 0 0 104px;
+            height: 12.45px;
+        }
+    }
+    // .header__menu
+    &__menu {
+        margin-left: auto;
+    }
+    // .header__cart
+    &__cart {
+        position: relative;
+        z-index: 2;
+        flex: 0 0 36px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+        img {
+            width: 18px;
+            height: 16px;
+            object-fit: contain;
+            @media (max-width: 320px) {
+                width: 12px;
+                height: 11px;
+            }
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #000;
+            }
+        }
+        @media (max-width: 320px) {
+            flex: 0 0 25px;
+            width: 25px;
+            height: 25px;
+            padding: 6px;
+        }
+    }
+}
+
+.logo {
+    transition: transform 0.3s;
+    @media (any-hover: hover) {
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.menu {
+    @media (max-width: 600px) {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #a1a483;
+        padding: 130px 40px 50px;
+        overflow: auto;
+        transition: left 0.3s;
+        .menu-open & {
+            left: 0;
+        }
+    }
+    @media (max-width: 320px) {
+        padding-top: 90px;
+    }
+    // .menu__list
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 31px;
+        row-gap: 10px;
+        @media (max-width: 600px) {
+            flex-direction: column;
+            row-gap: 40px;
+        }
+    }
+    // .menu__item
+    &__item {
+    }
+    // .menu__link
+    &__link {
+        font-size: 17px;
+        text-transform: uppercase;
+        color: #fff;
+        position: relative;
+        transition: color 0.3s;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.3s;
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                color: #000;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+        @media (max-width: 600px) {
+            font-size: 24px;
+        }
+        @media (max-width: 320px) {
+            font-size: 20px;
+        }
+    }
+}
+
+.menu-icon {
+    display: none;
+    @media (max-width: 600px) {
+        position: relative;
+        z-index: 2;
+        display: block;
+        flex: 0 0 22px;
+        width: 22px;
+        height: 15px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    @media (max-width: 320px) {
+        flex: 0 0 19px;
+        width: 19px;
+        height: 13px;
+    }
+}

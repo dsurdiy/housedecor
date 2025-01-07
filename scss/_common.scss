@@ -10,15 +10,17 @@
 }
 
 [class*="__container"] {
-   max-width: 1286px;
+   max-width: 1306px;
    margin: 0 auto;
-   padding-inline: 15px;
+   padding-inline: 25px;
+   @media (max-width: 320px) {
+      padding-inline: 23px;
+   }
 }
 
 body {
    font-family: "Inter", sans-serif;
    font-size: 18px;
-   line-height: 1.5;
    // &.menu-open {
    //    overflow: hidden;
    //    touch-action: none;
