@@ -2,7 +2,7 @@
     // .page__hero
     &__hero {
         padding: 46px 0;
-        @media (max-width: 600px) {
+        @media (max-width: 991.98px) {
             padding: 30px 0;
         }
         @media (max-width: 479.98px) {
@@ -12,7 +12,21 @@
             padding-bottom: 20px;
         }
     }
+    // .page__discount
+    &__discount {
+        padding-bottom: 23px;
+        @media (max-width: 600px) {
+            padding-bottom: 30px;
+        }
+    }
+    // .page__categories
+    &__categories {
+        margin-top: 23px;
+        margin-bottom: 40px;
+    }
 }
+
+// =============================================================================================================
 
 .hero {
     // .hero__container
@@ -128,5 +142,89 @@
             height: 100%;
             object-fit: cover;
         }
+    }
+}
+
+// =============================================================================================================
+
+.discount {
+    // .discount__container
+    &__container {
+    }
+    // .discount__title
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        padding-bottom: 24px;
+        border-bottom: 2px solid #f3f3f3;
+        @media (max-width: 600px) {
+            font-size: 16px;
+            padding-bottom: 12px;
+        }
+        @media (max-width: 320px) {
+            font-size: 10px;
+        }
+    }
+}
+
+// =============================================================================================================
+
+.categories {
+    // .categories__container
+    &__container {
+    }
+    // .categories__items
+    &__items {
+        display: flex;
+        gap: 16px;
+        min-height: 525px;
+    }
+    // .categories__item
+    &__item {
+        position: relative;
+        flex-basis: calc((100% - 32px) / 3);
+        padding: 117px 25px;
+        text-align: center;
+        &--green {
+            background-color: #e1e4c2;
+        }
+        &--blue {
+            background-color: #dceeee;
+        }
+        &--light-yellow {
+            background-color: #f3efe1;
+        }
+    }
+    // .categories__sub-title
+    &__sub-title {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }
+    // .categories__title
+    &__title {
+        position: relative;
+        z-index: 1;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+    // .categories__button
+    &__button {
+        position: relative;
+        z-index: 1;
+    }
+    // .categories__image
+    &__image {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: contain;
+        max-width: 100%;
+        height: 234px;
     }
 }
