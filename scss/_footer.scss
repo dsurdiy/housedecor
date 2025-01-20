@@ -1,0 +1,198 @@
+.footer {
+    margin-top: 40px;
+    background-color: #a1a483;
+    padding: 112px 0;
+    color: #fff;
+    @media (max-width: 991.98px) {
+        padding: 80px 0;
+    }
+    @media (max-width: 600px) {
+        padding: 61px 0 74px;
+        margin-top: 30px;
+    }
+    @media (max-width: 320px) {
+        margin-top: 20px;
+        padding: 39px 0 53px;
+    }
+    // .footer__container
+    &__container {
+        padding-inline: 120px;
+        @media (max-width: 991.98px) {
+            padding-inline: 50px;
+        }
+        @media (max-width: 479.98px) {
+            padding-inline: 20px;
+        }
+    }
+    // .footer__top
+    &__top {
+        &:not(:last-child) {
+            margin-bottom: 34px;
+            @media (max-width: 600px) {
+                margin-bottom: 22px;
+            }
+        }
+    }
+    // .footer__content
+    &__content {
+        text-align: center;
+        padding-bottom: 34px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        @media (max-width: 600px) {
+            padding-bottom: 55px;
+        }
+        @media (max-width: 320px) {
+            padding-bottom: 21px;
+        }
+    }
+    // .footer__title
+    &__title {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 122%; /* 61/50 */
+        &:not(:last-child) {
+            margin-bottom: 17px;
+            @media (max-width: 320px) {
+                margin-bottom: 14px;
+            }
+        }
+        @media (max-width: 991.98px) {
+            font-size: 40px;
+        }
+        @media (max-width: 600px) {
+            font-size: 35px;
+        }
+        @media (max-width: 320px) {
+            font-size: 24px;
+        }
+    }
+    // .footer__text
+    &__text {
+        margin: 0 auto;
+        max-width: 600px;
+        line-height: 150%;
+        p {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 33px;
+            @media (max-width: 320px) {
+                margin-bottom: 17px;
+            }
+        }
+        @media (max-width: 600px) {
+            font-size: 16px;
+        }
+        @media (max-width: 320px) {
+            max-width: 266px;
+            font-size: 12px;
+        }
+    }
+    // .footer__button
+    &__button {
+        min-width: 262px;
+        &:not(:last-child) {
+            margin-bottom: 60px;
+            @media (max-width: 600px) {
+                margin-bottom: 25px;
+            }
+            @media (max-width: 320px) {
+                margin-bottom: 20px;
+            }
+        }
+        @media (max-width: 600px) {
+            min-width: 240px;
+        }
+        @media (max-width: 320px) {
+            min-width: 177px;
+        }
+    }
+    // .footer__copy
+    &__copy {
+        font-size: 14px;
+        @media (max-width: 320px) {
+            font-size: 10px;
+        }
+    }
+    // .footer__bottom
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 40px;
+        @media (max-width: 600px) {
+            align-items: center;
+        }
+        @media (max-width: 479.98px) {
+            flex-direction: column;
+            row-gap: 29px;
+        }
+    }
+    // .footer__logo
+    &__logo {
+        width: 217px;
+        flex: 0 0 217px;
+        @media (max-width: 600px) {
+            width: 142px;
+            flex: 0 0 142px;
+        }
+        @media (max-width: 479.98px) {
+            flex: 0 0 auto;
+        }
+        @media (max-width: 320px) {
+            width: 93px;
+        }
+    }
+    // .footer__social
+    &__social {
+    }
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 10px;
+    @media (max-width: 600px) {
+        column-gap: 19px;
+    }
+    // .social__item
+    &__item {
+    }
+    // .social__link
+    &__link {
+        width: 43px;
+        height: 45px;
+        border-radius: 50%;
+        border: 2.25px solid rgba(255, 255, 255, 0.25);
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+        img {
+            max-width: 100%;
+            object-fit: contain;
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #000;
+            }
+        }
+        @media (max-width: 600px) {
+            width: 35px;
+            height: 37px;
+            padding: 10px;
+            border-width: 1.85px;
+        }
+        @media (max-width: 600px) {
+            width: 32px;
+            height: 34px;
+            padding: 9px;
+            border-width: 1.7px;
+        }
+    }
+}
