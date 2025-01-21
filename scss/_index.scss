@@ -27,13 +27,13 @@
     }
     // .page__categories
     &__categories {
-        margin-top: 23px;
-        margin-bottom: 40px;
+        padding-top: 23px;
+        padding-bottom: 40px;
         @media (max-width: 600px) {
-            margin: 30px 0;
+            padding: 30px 0;
         }
         @media (max-width: 320px) {
-            margin: 20px 0;
+            padding: 20px 0;
         }
     }
     // .page__clients
@@ -755,6 +755,7 @@
     }
     // .product__title-link
     &__title-link {
+        text-transform: capitalize;
         font-weight: 600;
         line-height: 164.705882%; /* 28/17 */
         text-decoration: underline;

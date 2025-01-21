@@ -10,7 +10,7 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header data-watch class="header">
       <div class="header__container">
         <button class="menu-icon" type="button" aria-label="menu button">
           <img src="img/icons/menu.svg" alt="Menu burger">
@@ -44,7 +44,7 @@
     </header>
 
     <main class="page">
-      <section class="page__hero hero">
+      <section data-watch class="page__hero hero">
         <div class="hero__container">
           <div class="hero__body">
             <div class="hero__content">
@@ -55,7 +55,7 @@
                   Both functional and decorative, which feels artisan-made but has a contemporary look.
                 </p>
               </div>
-              <a class="hero__button button" href="#">EXPLORE</a>
+              <a data-goto=".about" class="hero__button button" href="#">EXPLORE</a>
             </div>
             <div class="hero__image">
               <img src="img/hero/01.webp" alt="HOUSEDECOR">
@@ -63,36 +63,36 @@
           </div>
         </div>
       </section>
-      <div class="page__discount discount">
+      <div data-watch class="page__discount discount">
         <div class="discount__container">
           <h3 class="discount__title">
             Place seasonal & targeted discount benefits here
           </h3>
         </div>
       </div>
-      <section class="page__categories categories">
+      <section data-watch class="page__categories categories">
         <div class="categories__container">
           <div class="categories__items">
             <div class="categories__item categories__item--green">
               <h5 class="categories__sub-title sub-title">NEW COLLECTION</h5>
               <h2 class="categories__title title">Decor & <br> Wellness</h2>
-              <a class="categories__button button" href="#">Show more</a>
+              <a data-goto=".shop" class="categories__button button" href="#">Show more</a>
               <img class="categories__image" src="img/categories/decor.webp" alt="Decor & Wellness">
             </div>
             <div class="categories__item categories__item--blue">
               <h2 class="categories__title title">Kitchen & <br> Dining</h2>
-              <a class="categories__button button" href="#">Show more</a>
+              <a data-goto=".shop" class="categories__button button" href="#">Show more</a>
               <img class="categories__image" src="img/categories/kitchen.webp" alt="Kitchen & Dining">
             </div>
             <div class="categories__item categories__item--light-yellow">
               <h2 class="categories__title title">Shop <br> Furniture</h2>
-              <a class="categories__button button" href="#">Show more</a>
+              <a data-goto=".shop" class="categories__button button" href="#">Show more</a>
               <img class="categories__image" src="img/categories/furniture.webp" alt="Shop Furniture">
             </div>
           </div>
         </div>
       </section>
-      <div class="page__clients clients">
+      <div data-watch class="page__clients clients">
         <div class="clients__container">
           <ul class="clients__list">
             <li class="clients__item">
@@ -128,14 +128,14 @@
           </ul>
         </div>
       </div>
-      <section class="page__arrivals arrivals">
+      <section data-watch class="page__arrivals arrivals">
         <div class="arrivals__container">
           <div class="arrivals__content">
             <h3 class="arrivals__sub-title sub-title sub-title--white">NEW COLLECTION</h3>
             <h2 class="arrivals__title title title--white">
               Everything you <br> need for your <br> living room
             </h2>
-            <a class="button" href="#">PURCHASE</a>
+            <a data-goto=".shop" class="button" href="#">PURCHASE</a>
           </div>
         </div>
         <picture>
@@ -143,7 +143,7 @@
           <img class="arrivals__image" src="img/arrivals/bg.webp" alt="Image arrivals">
         </picture>
       </section>
-      <div class="page__advantages advantages">
+      <div data-watch class="page__advantages advantages">
         <div class="advantages__container">
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -154,7 +154,7 @@
               <h3 class="advantages__title">Long-life objects</h3>
               <div class="advantages__text">
                 <p>
-                  Short text describing one of your product or service advantages. Try being creative.
+                  Unique options and wide, almost unlimited choice.
                 </p>
               </div>
             </li>
@@ -166,7 +166,7 @@
               <h3 class="advantages__title">Fast Shipping</h3>
               <div class="advantages__text">
                 <p>
-                  Short text describing one of your product or service advantages. Try being creative.
+                  Speed and convenience of delivery. Saving time.
                 </p>
               </div>
             </li>
@@ -178,14 +178,14 @@
               <h3 class="advantages__title">10% cashbacks</h3>
               <div class="advantages__text">
                 <p>
-                  Short text describing one of your product or service advantages. Try being creative.
+                  More profitable prices.
                 </p>
               </div>
             </li>
           </ul>
         </div>
       </div>
-      <section class="page__about about">
+      <section data-watch class="page__about about">
         <div class="about__container">
           <h2 class="about__title title">Furniture designed for you</h2>
           <picture>
@@ -195,18 +195,20 @@
           </picture>
           <div class="about__wrapper">
             <div class="about__content">
-              <h3 class="about__label">Short subtitle for a section</h3>
+              <h3 class="about__label">Welcome to the HOUSEDECOR company!</h3>
               <div class="about__text">
                 <p>
-                  A small description of what you can offer your customers or why they should choose your service
+                  Here you will find everything to realize your ideas in the interior: from practical budget solutions
+                  to the latest
+                  collections of European manufacturers!
                 </p>
               </div>
             </div>
-            <a class="about__button button" href="#">FIND MORE</a>
+            <a data-goto=".shop" class="about__button button" href="#">FIND MORE</a>
           </div>
         </div>
       </section>
-      <section class="page__shop shop">
+      <section data-watch class="page__shop shop">
         <div class="shop__container">
           <h2 class="shop__title title">Shop best sellers</h2>
           <ul class="shop__list">
@@ -218,9 +220,9 @@
                 <div class="product__content">
                   <div class="product__info">
                     <h3 class="product__title">
-                      <a class="product__title-link" href="#">Product Name</a>
+                      <a class="product__title-link" href="#">Tall lamp</a>
                     </h3>
-                    <div class="product__price">€4.00</div>
+                    <div class="product__price">€34.00</div>
                   </div>
                   <a class="product__link" href="#">
                     <img src="img/icons/shop.svg" alt="Shop cart">
@@ -236,9 +238,9 @@
                 <div class="product__content">
                   <div class="product__info">
                     <h3 class="product__title">
-                      <a class="product__title-link" href="#">Product Name</a>
+                      <a class="product__title-link" href="#">Shoe stand</a>
                     </h3>
-                    <div class="product__price">€4.00</div>
+                    <div class="product__price">€16.00</div>
                   </div>
                   <a class="product__link" href="#">
                     <img src="img/icons/shop.svg" alt="Shop cart">
@@ -254,9 +256,9 @@
                 <div class="product__content">
                   <div class="product__info">
                     <h3 class="product__title">
-                      <a class="product__title-link" href="#">Product Name</a>
+                      <a class="product__title-link" href="#">fashionable table</a>
                     </h3>
-                    <div class="product__price">€4.00</div>
+                    <div class="product__price">€52.99</div>
                   </div>
                   <a class="product__link" href="#">
                     <img src="img/icons/shop.svg" alt="Shop cart">
@@ -272,9 +274,9 @@
                 <div class="product__content">
                   <div class="product__info">
                     <h3 class="product__title">
-                      <a class="product__title-link" href="#">Product Name</a>
+                      <a class="product__title-link" href="#">coffee table</a>
                     </h3>
-                    <div class="product__price">€4.00</div>
+                    <div class="product__price">€24.00</div>
                   </div>
                   <a class="product__link" href="#">
                     <img src="img/icons/shop.svg" alt="Shop cart">
@@ -290,9 +292,9 @@
                 <div class="product__content">
                   <div class="product__info">
                     <h3 class="product__title">
-                      <a class="product__title-link" href="#">Product Name</a>
+                      <a class="product__title-link" href="#">modern sideboard</a>
                     </h3>
-                    <div class="product__price">€4.00</div>
+                    <div class="product__price">€69.00</div>
                   </div>
                   <a class="product__link" href="#">
                     <img src="img/icons/shop.svg" alt="Shop cart">
@@ -308,9 +310,9 @@
                 <div class="product__content">
                   <div class="product__info">
                     <h3 class="product__title">
-                      <a class="product__title-link" href="#">Product Name</a>
+                      <a class="product__title-link" href="#">soft chair</a>
                     </h3>
-                    <div class="product__price">€4.00</div>
+                    <div class="product__price">€54.00</div>
                   </div>
                   <a class="product__link" href="#">
                     <img src="img/icons/shop.svg" alt="Shop cart">
@@ -326,9 +328,9 @@
                 <div class="product__content">
                   <div class="product__info">
                     <h3 class="product__title">
-                      <a class="product__title-link" href="#">Product Name</a>
+                      <a class="product__title-link" href="#">comfortable sofa</a>
                     </h3>
-                    <div class="product__price">€4.00</div>
+                    <div class="product__price">€89.99</div>
                   </div>
                   <a class="product__link" href="#">
                     <img src="img/icons/shop.svg" alt="Shop cart">
@@ -344,9 +346,9 @@
                 <div class="product__content">
                   <div class="product__info">
                     <h3 class="product__title">
-                      <a class="product__title-link" href="#">Product Name</a>
+                      <a class="product__title-link" href="#">stylish cabinet</a>
                     </h3>
-                    <div class="product__price">€4.00</div>
+                    <div class="product__price">€75.00</div>
                   </div>
                   <a class="product__link" href="#">
                     <img src="img/icons/shop.svg" alt="Shop cart">
@@ -359,7 +361,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer data-watch class="footer">
       <div class="footer__container">
         <div class="footer__top">
           <div class="footer__content">
@@ -371,7 +373,7 @@
                 back to you quickly.
               </p>
             </div>
-            <a class="footer__button button" href="#">GET IN TOUCH</a>
+            <a class="footer__button button" href="tel:+1234567890">GET IN TOUCH</a>
             <div class="footer__copy">© 2025 House Decor, LLC</div>
           </div>
         </div>
@@ -381,22 +383,22 @@
           </a>
           <ul class="footer__social social">
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="https://www.linkedin.com/" target="_blank">
                 <img src="img/icons/linkedin.svg" alt="linkedin">
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="https://www.facebook.com/" target="_blank">
                 <img src="img/icons/facebook.svg" alt="facebook">
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="https://www.instagram.com/" target="_blank">
                 <img src="img/icons/instagram.svg" alt="instagram">
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="https://www.youtube.com/" target="_blank">
                 <img src="img/icons/youtube.svg" alt="youtube">
               </a>
             </li>

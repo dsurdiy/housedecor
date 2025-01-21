@@ -44,22 +44,35 @@ function documentActions(e) {
       });
 
    }
+
+   if (targetElement.closest(".header__cart")) {
+      e.preventDefault();
+      const heroEl = document.querySelector(".shop");
+      const headerContainerEl = document.querySelector(".header__container");
+      const headerContainerHeight = headerContainerEl ? headerContainerEl.offsetHeight : 0;
+
+      window.scrollTo({
+         top: heroEl.offsetTop - headerContainerHeight,
+         behavior: "smooth",
+      });
+
+   }
 }
 
 
 // -------------- Animations (IntersectionObserver) -------------------
 
-// const items = document.querySelectorAll("[data-watch]");
-// const options = {
-//    threshold: 0.2,
-// }
-// const callback = (entries) => {
-//    entries.forEach(entry => {
-//       entry.isIntersecting ? entry.target.classList.add("active") : entry.target.classList.remove("active");
-//    });
-// }
-// const observer = new IntersectionObserver(callback, options);
+const items = document.querySelectorAll("[data-watch]");
+const options = {
+   threshold: 0.2,
+}
+const callback = (entries) => {
+   entries.forEach(entry => {
+      entry.isIntersecting ? entry.target.classList.add("active") : null;
+   });
+}
+const observer = new IntersectionObserver(callback, options);
 
-// items.forEach(item => {
-//    observer.observe(item);
-// });
+items.forEach(item => {
+   observer.observe(item);
+});
