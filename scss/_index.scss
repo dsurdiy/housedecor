@@ -1,14 +1,17 @@
 .page {
     // .page__hero
     &__hero {
-        padding: 46px 0;
+        padding-top: 125px;
+        padding-bottom: 46px;
         @media (max-width: 991.98px) {
-            padding: 30px 0;
+            padding-top: 109px;
+            padding-bottom: 30px;
         }
         @media (max-width: 479.98px) {
-            padding-top: 0;
+            padding-top: 79px;
         }
         @media (max-width: 320px) {
+            padding-top: 52px;
             padding-bottom: 20px;
         }
     }
